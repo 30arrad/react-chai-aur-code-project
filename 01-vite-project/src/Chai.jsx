@@ -1,12 +1,16 @@
 import { useState } from "react";
 
 function Chai() {
-  const [counter, setCounter] = useState(15);
+  const [counter, setCounter] = useState(0);
   let Add = () => {
-    setCounter(counter + 1);
+    if (counter < 20) {
+      setCounter(counter + 1);
+    }
   };
   let Remove = () => {
-    setCounter(counter - 1);
+    if (0< counter) {
+      setCounter(counter - 1);
+    }
   };
 
   return (
