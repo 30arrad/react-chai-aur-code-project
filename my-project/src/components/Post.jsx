@@ -14,19 +14,35 @@ export default function Post() {
         </div>
 
         <p className="mt-3 text-sm">
-          Advance your career with 100 free courses & certificates.
+          A proper article indicates that its noun is proper, and refers to a
+          unique entity. It may be the name of a person, the name of a place,
+          the name of a planet, etc. The Māori language has the proper article
+          a, which is used for personal nouns; so, "a Pita" means "Peter".
         </p>
+        <br />
 
         <img
-          src="https://source.unsplash.com/600x300/?education"
-          className="mt-3 rounded"
+          src="https://i.pravatar.cc/50"
+          className=" w-full size-100 rounded"
         />
+
+        <div className="flex items-center justify-between text-sm text-gray-600 px-4 py-2 border-t">
+          {/* Left: Reactions */}
+          <div className="flex items-center gap-1">
+            <div className="flex -space-x-1">Like</div>
+            <span className="ml-1">2,123</span>
+          </div>
+
+          {/* Right: Comments & Reposts */}
+          <div className="flex gap-4">
+            <span className="hover:underline cursor-pointer">283 comments</span>
+          </div>
+        </div>
       </div>
 
       <div className="border-t flex justify-around py-2 text-sm text-gray-600">
         <button>Like</button>
         <button>Comment</button>
-        <button>Repost</button>
         <button>Send</button>
       </div>
     </div>
